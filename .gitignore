@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.env*
+!.env.example
+npm-debug.log*
+*.tsbuildinfo
+
+
+.vercel
+/.swc
+runtime/*
+!runtime/.gitkeep
+tools/vendor/
+.venv/

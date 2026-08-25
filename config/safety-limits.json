@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "authorizationPhrase": "USO AUTORIZADO",
+  "requireAuthorizationForPersonalData": true,
+  "maxConcurrentMissions": 2,
+  "maxToolsPerMission": 6,
+  "maxTargetsPerMission": 3,
+  "maxRequestsPerHourPerOwner": 20,
+  "toolTimeoutMs": 90000,
+  "maxOutputCharacters": 12000,
+  "auditRetentionDays": 30,
+  "metadata": {
+    "maxScrapeDepth": 1,
+    "maxThreads": 3,
+    "maxRequestsPerSecond": 1,
+    "allowExternalLinks": false,
+    "allowDownloads": false,
+    "disableReverseGeocoding": true
+  },
+  "blockedTargetPatterns": [
+    "localhost",
+    "127.0.0.1",
+    "0.0.0.0",
+    "::1",
+    "169.254.",
+    "10.",
+    "192.168."
+  ],
+  "redactFields": ["sessionid", "token", "password", "cookie", "authorization"]
+}
