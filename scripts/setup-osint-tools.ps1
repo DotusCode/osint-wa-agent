@@ -6,7 +6,7 @@ $venv = Join-Path $projectRoot ".venv"
 if (-not (Test-Path -LiteralPath $venv)) { python -m venv $venv }
 $python = Join-Path $venv "Scripts\python.exe"
 if (-not (Test-Path -LiteralPath $python)) { $python = Join-Path $venv "bin\python" }
-& $python -m pip install --upgrade pip openosint toutatis MetaDetective
+& $python -m pip install openosint toutatis MetaDetective
 $temporaryRoot = Join-Path ([System.IO.Path]::GetTempPath()) ("mrholmes-" + [guid]::NewGuid())
 New-Item -ItemType Directory -Path $temporaryRoot | Out-Null
 $archive = Join-Path $temporaryRoot "mrholmes.zip"
